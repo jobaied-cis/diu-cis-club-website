@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS Club - Join</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="daffodil-logo.jpg" class="daffodil-logo">
+            <img src="cis-logo.jpg" class="cis-logo">
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="members.html" class="active">Join</a>
+            <a href="resources.html">Resources</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ===== JOIN HERO ===== -->
+    <section class="join-hero">
+        <h1>Become a CIS Club Member</h1>
+        <p>Unlock opportunities, gain experience, build skills & join our amazing community.</p>
+    </section>
+
+    <!-- ===== WHY JOIN US ===== -->
+    <section class="why-join">
+        <h2>Why Join CIS Club?</h2>
+
+        <div class="why-cards">
+            <div class="why-card fade-slide">
+                <h3>🚀 Skill Development</h3>
+                <p>Learn programming, AI, robotics, app development, web development & more.</p>
+            </div>
+            <div class="why-card fade-slide">
+                <h3>🎥 Events & Workshops</h3>
+                <p>Get exclusive access to coding contests, mega events & seminars.</p>
+            </div>
+            <div class="why-card fade-slide">
+                <h3>🤝 Networking</h3>
+                <p>Connect with seniors, experts, faculty & tech industry professionals.</p>
+            </div>
+            <div class="why-card fade-slide">
+                <h3>🏆 Competitions</h3>
+                <p>Participate in programming contests, cultural festivals & sports events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REGISTRATION FORM ===== -->
+    <section class="join-form">
+        <h2>Register Now</h2>
+        <form id="memberForm">
+
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Student ID (e.g., 251-16-031)" required>
+            <input type="text" placeholder="Department (ex: CIS)" required>
+
+            <textarea placeholder="Why do you want to join the CIS Club?" rows="4"></textarea>
+
+            <button type="submit" class="join-btn">Submit</button>
+
+        </form>
+
+        <p id="successMessage" class="success-message">Your application has been submitted successfully!</p>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2025 DIU CIS CLUB WEBSITE | Developed by Jobaied Chowdhury Akash</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

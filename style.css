@@ -1,0 +1,892 @@
+/* ===== start index.html css part===== */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f4f8;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ff6b6b;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+p {
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #ff6b6b, #f94d6a);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between the two logos */
+}
+.navbar .logo img {
+    height: 50px; /* adjust size */
+    width: auto;
+}
+.daffodil-logo {
+    height: 50px;
+}
+.cis-logo {
+    height: 45px;
+}
+.navbar .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.navbar .logo span {
+    color: #ffe66d;
+}
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.navbar nav a:hover {
+    color: #ffe66d;
+}
+
+/* ===== HERO SLIDER ===== */
+.hero {
+    position: relative;
+    max-height: 550px;
+    overflow: hidden;
+    border-radius: 0 0 50% 50% / 0 0 10% 10%;
+}
+.slides {
+    display: none;
+    position: relative;
+}
+.slides img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+.hero-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+    font-size: 2.8em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+}
+
+/* ===== WELCOME, FEATURED EVENT, CTA ===== */
+.welcome, .featured-event, .cta, .about-us, .wings, .facilities, .info-links {
+    padding: 60px 20px;
+}
+.featured-event .event-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin: 20px auto;
+    max-width: 950px;
+}
+.cta {
+    padding: 60px 20px;
+    text-align: center; 
+}
+.cta .join-btn {
+    display: inline-block; 
+    margin: 20px auto 0 auto; 
+}
+
+.event-card img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-right: 2px solid #ff6b6b;
+}
+.event-info {
+    padding: 30px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff6b6b, #f94d6a);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: transform 0.3s, background 0.3s;
+}
+.btn:hover {
+    background: linear-gradient(90deg, #f94d6a, #ff6b6b);
+    transform: scale(1.05);
+}
+
+/* ===== WINGS ===== */
+.wing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.wing-card {
+    background: linear-gradient(145deg, #ffe66d, #ff6b6b);
+    padding: 25px;
+    width: 320px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.wing-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+.wing-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* ===== ABOUT US ===== */
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+/* ===== FACILITIES ===== */
+.facility-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.facility-card {
+    background: #fff;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.3s, background 0.3s;
+}
+.facility-card:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(90deg, #ff6b6b, #ffe66d);
+    color: #fff;
+}
+
+/* ===== INFO LINKS ===== */
+.info-links ul {
+    list-style: none;
+    padding: 0;
+}
+.info-links li {
+    margin: 12px 0;
+    font-weight: 500;
+}
+.info-links a {
+    color: #ff6b6b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.info-links a:hover {
+    color: #f94d6a;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(90deg, #ff6b6b, #f94d6a);
+    color: #fff;
+    font-weight: 500;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .navbar nav {
+        margin-top: 10px;
+    }
+    .featured-event .event-card {
+        flex-direction: column;
+    }
+    .hero-text {
+        font-size: 2em;
+        left: 20px;
+        bottom: 30px;
+    }
+    .wing-card, .facility-card {
+        width: 90%;
+    }
+}
+/* END OF home page */
+/* ===== start about.html part ===== */
+/* ========== ABOUT HERO ========== */
+.about-hero {
+    background: #6bbaff url('about-hero.jpg') no-repeat center center/cover;
+    color:#ff6b6b ;
+    padding: 80px 20px;
+    text-align: center;
+}
+.about-hero h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.about-hero p {
+    color: #fff;
+    font-size: 1.2em;
+    max-width: 700px;
+}
+
+/* ========== ABOUT INFO CARDS ========== */
+.about-info {
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.about-card {
+    background: #fff;
+    width: 330px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform .3s;
+}
+.about-card:hover {
+    transform: translateY(-8px);
+}
+.about-card h2 {
+    color: #ff6b6b;
+    text-transform: uppercase;
+}
+.about-card ul {
+    padding-left: 20px;
+}
+
+/* ========== TEAM CARDS ========== */
+.about-team {
+    padding: 60px 20px;
+    text-align: center;
+}
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.team-card {
+    background: #fff;
+    width: 260px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform .3s;
+}
+.team-card:hover {
+    transform: translateY(-10px);
+}
+.team-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.team-card h3 {
+    margin-top: 15px;
+    color: #ff6b6b;
+}
+.team-card p {
+    margin: 8px 0 0;
+    font-weight: 500;
+}
+
+/* ===== Responsive for About Page ===== */
+@media (max-width: 768px) {
+    .about-info,
+    .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.about-section p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+/* ===== end about.html part ===== */
+/* ===== START EVENTS css part===== */
+/* ===== EVENTS HERO ===== */
+.events-hero {
+    background: linear-gradient(90deg, #ff6b6b, #f94d6a);
+    background: #6bbaff url('event-hero2.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: rgb(246, 228, 228);
+}
+.events-hero h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/* ===== EVENT SECTION ===== */
+.event-section {
+    padding: 60px 20px;
+}
+.event-section h2 {
+    color: #ff6b6b;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* ===== EVENT LIST (TOP TO BOTTOM) ===== */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== EVENT CARD ===== */
+.event-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform .3s, box-shadow .3s;
+}
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.22);
+}
+.event-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.event-card h3 {
+    color: #ff6b6b;
+    margin: 15px 0 5px;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-slide {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeSlideIn 1s forwards;
+}
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== END EVENTS css part===== */
+/* ===== start members.css part */
+/* ================================
+   JOIN / MEMBERS PAGE CSS
+   ================================ */
+
+/* ===== HERO ===== */
+.join-hero {
+    background: url("join-bg.jpg") center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+    position: relative;
+}
+.join-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+.join-hero h1,
+.join-hero p {
+    position: relative;
+    z-index: 2;
+}
+.join-hero h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+}
+.join-hero p {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: auto;
+    color: #ffe66d;
+}
+
+/* ===== WHY JOIN ===== */
+.why-join {
+    padding: 50px 20px;
+    text-align: center;
+}
+.why-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.why-card {
+    background: #fff;
+    width: 260px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform .3s;
+}
+.why-card:hover {
+    transform: translateY(-10px);
+}
+.why-card h3 {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+/* ===== FORM ===== */
+.join-form {
+    padding: 50px 20px;
+    text-align: center;
+}
+.join-form form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.join-form input,
+.join-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1.1em;
+    outline: none;
+}
+.join-form input:focus,
+.join-form textarea:focus {
+    border-color: #ff6b6b;
+}
+.join-form .join-btn {
+    background: linear-gradient(90deg, #ff6b6b, #f94d6a);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.join-form .join-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Success Message */
+.success-message {
+    display: none;
+    margin-top: 15px;
+    color: #06b906;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Fade & Slide Animation */
+.fade-slide {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s;
+}
+.fade-slide.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .why-card {
+        width: 90%;
+    }
+}
+/* ===== end members.css part */
+/* ===== start resource.css part ===== */
+/* ================================
+   RESOURCES PAGE CSS
+   ================================ */
+
+/* ----- HERO ----- */
+.resources-hero {
+    background: url("resources-bg.jpg") center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+    position: relative;
+}
+.resources-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+.resources-hero h1,
+.resources-hero p {
+    position: relative;
+    z-index: 2;
+}
+.resources-hero h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+.resources-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #ffe66d;
+    font-size: 1.3em;
+}
+
+/* ----- RESOURCE SECTIONS ----- */
+.res-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.res-section h2 {
+    color: #ff6b6b;
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
+
+/* ----- RESOURCE CARDS ----- */
+.res-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+.res-card {
+    background: #fff;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform .3s, box-shadow .3s;
+}
+.res-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+.res-card h3 {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+.res-card p {
+    font-size: 1.1em;
+}
+
+/* BUTTON */
+.res-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #ff6b6b, #f94d6a);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform .3s;
+}
+.res-btn:hover {
+    transform: scale(1.08);
+}
+
+/* Fade Animation */
+.fade-slide {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s ease-out;
+}
+.fade-slide.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .res-card {
+        width: 90%;
+    }
+}
+/* ===== end resource.css part ===== */
+/* ===== start GALARY.css part ===== */
+/* ================================
+   GALLERY PAGE CSS
+   ================================ */
+
+/* ----- HERO ----- */
+.gallery-hero {
+    background: url("gallery-bg.jpg") center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+    position: relative;
+}
+.gallery-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.gallery-hero h1,
+.gallery-hero p {
+    position: relative;
+    z-index: 2;
+}
+.gallery-hero h1 {
+    font-size: 3em;
+}
+.gallery-hero p {
+    font-size: 1.3em;
+    color: #ffe66d;
+}
+
+/* ----- GALLERY SECTION ----- */
+.gallery-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.gallery-section h2 {
+    color: #ff6b6b;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+/* ----- IMAGE GRID ----- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform .3s, box-shadow .3s;
+}
+.gallery-img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ----- LIGHTBOX POPUP ----- */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+.close-lightbox {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Fade Animation */
+.fade-slide {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s;
+}
+.fade-slide.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery-img {
+        height: 200px;
+    }
+}   
+/* ===== end GALARY.css part ===== */
+/* ===== start contact.css part ===== */
+/* ================================
+   CONTACT PAGE CSS
+   ================================ */
+
+/* ----- HERO ----- */
+.contact-hero {
+    background: url("contact-bg.jpg") center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+    position: relative;
+}
+.contact-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.contact-hero h1,
+.contact-hero p {
+    position: relative;
+    z-index: 2;
+}
+.contact-hero h1 {
+    font-size: 3em;
+}
+.contact-hero p {
+    font-size: 1.3em;
+    color: #ffe66d;
+}
+
+/* ----- CONTACT INFO ----- */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 20px;
+}
+.info-card {
+    background: #fff;
+    padding: 25px 30px;
+    width: 280px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: .3s;
+}
+.info-card:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(90deg, #ff6b6b, #ffe66d);
+    color: #fff;
+}
+.info-card h3 {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+.info-card:hover h3 {
+    color: #fff;
+}
+
+/* ----- CONTACT FORM ----- */
+.contact-form-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+.contact-form-section h2 {
+    color: #ff6b6b;
+}
+.contact-form {
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 2px solid #ff6b6b;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f94d6a;
+}
+
+/* ----- MAP ----- */
+.map-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.map-section iframe {
+    width: 90%;
+    height: 350px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Animation (same as other pages) */
+.fade-slide {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s;
+}
+.fade-slide.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-card {
+        width: 90%;
+    }
+}
+/* ===== end contact.css part ===== */
